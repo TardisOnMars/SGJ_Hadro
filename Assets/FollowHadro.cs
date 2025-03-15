@@ -14,12 +14,23 @@ public class FollowHadro : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.GetComponent<MainHadro>())
+        Debug.Log("Youngling " + collision.collider.name);
+        if (collision.collider.CompareTag("MainHadro"))
         {
             isFollowing = true;
-            target = other.transform;
+            target = collision.collider.transform;
+        }
+    }
+    
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log("Youngling " + collider.name);
+        if (collider.CompareTag("MainHadro"))
+        {
+            isFollowing = true;
+            target = collider.transform;
         }
     }
 

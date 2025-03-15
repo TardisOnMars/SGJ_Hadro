@@ -1,7 +1,5 @@
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-
+using System.Collections.Generic;
 public class Nest : MonoBehaviour
 {
     
@@ -51,6 +49,16 @@ public class Nest : MonoBehaviour
                 buildingFillBar.gameObject.SetActive(false);
                 buildingFillBar.FillAmount = 0f;
                 SwitchNestSprite();
+                
+                var collider = GetComponent<Collider2D>();
+                List<Collider2D> colliders = new();
+                collider.GetContacts(colliders);
+                
+                if (colliders.Find(col => col.gameObject.CompareTag("MainHadro")))
+                {
+                    _isBreeding = true;
+                    breedingBar.gameObject.SetActive(true);
+                }
             }
         }
 
@@ -62,6 +70,11 @@ public class Nest : MonoBehaviour
             if (breedingBar.FillAmount >= 1f)
             {
                 _eggAmount = 3;
+                
+                GameManager.Instance.OnAddEgg();
+                GameManager.Instance.OnAddEgg();
+                GameManager.Instance.OnAddEgg();
+                
                 SwitchNestSprite();
                 breedingBar.gameObject.SetActive(false);
                 breedingBar.FillAmount = 0f;
@@ -75,8 +88,9 @@ public class Nest : MonoBehaviour
             if (currentHatchingTime >= hatchingDuration)
             {
                 _eggAmount--;
-                Debug.Log("Update" + _eggAmount);
                 var youngling = Instantiate(younglingPrefab, _hatchingPositions[_eggAmount].position, Quaternion.identity);
+                GameManager.Instance.OnKillEgg();
+                GameManager.Instance.OnAddYoungling(youngling);
                 currentHatchingTime = 0f;
                 SwitchNestSprite();
             }
@@ -87,7 +101,6 @@ public class Nest : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("MainHadro")) return;
-        Debug.Log("OnTriggerEnter2D" + _eggAmount);
         if (!_isBuilt)
         {
             _isBuilding = true;
@@ -95,7 +108,6 @@ public class Nest : MonoBehaviour
         }
         else if (!_isBreeding && _eggAmount == 0)
         {
-            
             _isBreeding = true;
             breedingBar.gameObject.SetActive(true);
         }
@@ -105,7 +117,6 @@ public class Nest : MonoBehaviour
     {
         _isBuilding = false;
         _isBreeding = false;
-        
     }
     
     public void SwitchNestSprite()

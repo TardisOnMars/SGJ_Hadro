@@ -1,5 +1,7 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class MainHadro : MonoBehaviour
 {
@@ -11,10 +13,56 @@ public class MainHadro : MonoBehaviour
     public bool isBreeding = false;
 
     public FillBar foodBar;
+
+    public List<GameObject> individuals = new();
+
+    private bool isStarving;
+    private Coroutine coStarving;
+    
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GameManager.Instance.checkPopulation.AddListener(UpdateIndividuals);
+    }
+
+
+    private void UpdateIndividuals()
+    {
+        foreach (var individual in GameManager.Instance.individuals)
+        {
+            if (!individuals.Contains(individual))
+            {
+                individuals.Add(individual);
+            }
+        }
+    }
+    private IEnumerator CoStarving()
+    {
+        while (GameManager.Instance.individualTotalCount > 0)
+        {
+            yield return new WaitForSeconds(4);
+            if (individuals.Count == 0)
+            {
+                GameManager.Instance.OnKillHadro();
+            }
+            else
+            {
+                var toKill = individuals[0];
+                individuals.Remove(toKill);
+
+                if (toKill.GetComponent<Youngling>())
+                {
+                    GameManager.Instance.OnKillYoungling();
+                }
+                else if (toKill.GetComponent<Hadro>())
+                {
+                    GameManager.Instance.OnKillHadro();
+                }
+                Destroy(toKill);
+            }
+        }
+        Destroy(gameObject);
     }
 
     // Update is called once per frame
@@ -30,6 +78,13 @@ public class MainHadro : MonoBehaviour
         }
 
         foodBar.FillAmount = Mathf.Clamp(food / MAX_FOOD, 0f, 1f);
+
+        if (foodBar.FillAmount <= 0 && !isStarving)
+        {
+            foodBar.FillAmount = 0;
+            isStarving = true;
+            coStarving = StartCoroutine(CoStarving());
+        }
     }
 
 
@@ -53,6 +108,8 @@ public class MainHadro : MonoBehaviour
         if (this.food > MAX_FOOD) this.food = MAX_FOOD;
         
         foodBar.FillAmount = Mathf.Clamp(this.food / MAX_FOOD, 0f, 1f);
+        isStarving = false;
+        if(coStarving != null) StopCoroutine(coStarving);
         Destroy(food.gameObject);
     }
 }
