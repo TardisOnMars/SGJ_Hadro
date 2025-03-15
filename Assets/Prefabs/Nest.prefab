@@ -116,7 +116,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f785411503676e468c53b6aa617f094, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -202,9 +202,9 @@ MonoBehaviour:
   buildingFillBar: {fileID: 8138179800282425412}
   breedingBar: {fileID: 8909383837996642509}
   nestSprites:
-  - {fileID: -8078084939569769037, guid: c4ad38713cbfe6846a2151bb2eab6a86, type: 3}
-  - {fileID: -528873981588894884, guid: ad7e82cef79b4a348bb10d041d91a2e1, type: 3}
-  - {fileID: -3159431473491217871, guid: d91758b5343d1444295f2a64e353918e, type: 3}
+  - {fileID: 21300000, guid: 4f785411503676e468c53b6aa617f094, type: 3}
+  - {fileID: 21300000, guid: 50515664661557944bf684009b898778, type: 3}
+  - {fileID: 21300000, guid: 89d8151e12df77d439746a29904beb54, type: 3}
   younglingPrefab: {fileID: 8555290541229881334, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
   hatchingDuration: 8
   currentHatchingTime: 0
