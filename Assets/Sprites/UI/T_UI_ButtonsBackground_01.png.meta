@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 923851023ec7bd9438b3b87412dca016
+guid: fd0382a25316e624d80ae2bccd973519
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 27233470555548671
-    second: T_UI_Spritesheet_01_0
+      213: -7742423420635218963
+    second: T_UI_ButtonsBackground_01_0
   - first:
-      213: 7248493646667036798
-    second: T_UI_Spritesheet_01_1
+      213: 9061754786600856785
+    second: T_UI_ButtonsBackground_01_1
   - first:
-      213: -4234904952193555975
-    second: T_UI_Spritesheet_01_2
+      213: 6386278038023128094
+    second: T_UI_ButtonsBackground_01_2
   - first:
-      213: -5766683002025547587
-    second: T_UI_Spritesheet_01_3
+      213: 2428977239836308661
+    second: T_UI_ButtonsBackground_01_3
   - first:
-      213: -4754206409535118149
-    second: T_UI_Spritesheet_01_4
+      213: 1844375902126577707
+    second: T_UI_ButtonsBackground_01_4
   - first:
-      213: 4780060969591405767
-    second: T_UI_Spritesheet_01_5
-  - first:
-      213: 4437098749970888118
-    second: T_UI_Spritesheet_01_6
-  - first:
-      213: 640860760477747253
-    second: T_UI_Spritesheet_01_7
+      213: -2682446542186840527
+    second: T_UI_ButtonsBackground_01_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,221 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T_UI_Spritesheet_01_0
+      name: T_UI_ButtonsBackground_01_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 512
-        height: 512
+        x: 39
+        y: 1533
+        width: 1901
+        height: 435
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6a860d302c7c0a845850b1ab251a8e23
-      internalID: -1191184329
+      spriteID: deb7f588be26d8490800000000000000
+      internalID: -7742423420635218963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_UI_Spritesheet_01_1
+      name: T_UI_ButtonsBackground_01_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
+        x: 58
+        y: 1058
+        width: 1110
+        height: 436
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 38d12de4293c4144c9b82ebe7873e3f5
-      internalID: 2100587086
+      spriteID: 1dc2a0997f1d1cd70800000000000000
+      internalID: 9061754786600856785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_UI_Spritesheet_01_2
+      name: T_UI_ButtonsBackground_01_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
+        x: 1180
+        y: 1101
+        width: 767
+        height: 403
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 49f7d5e146db82c489348c36d17c0ae8
-      internalID: -1587514235
+      spriteID: e144f352a0e90a850800000000000000
+      internalID: 6386278038023128094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_UI_Spritesheet_01_3
+      name: T_UI_ButtonsBackground_01_3
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
+        x: 72
+        y: 601
+        width: 1908
+        height: 426
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 045d3e645b7d8aa4897aea40cbb98da1
-      internalID: 2085492841
+      spriteID: 5b4b3fb2ee575b120800000000000000
+      internalID: 2428977239836308661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_UI_Spritesheet_01_4
+      name: T_UI_ButtonsBackground_01_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
+        x: 61
+        y: 61
+        width: 1231
+        height: 516
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6d01f3d40b8ea5b4aaf6ecce4ac5cddb
-      internalID: 336539560
+      spriteID: b289b8e6c1a889910800000000000000
+      internalID: 1844375902126577707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_UI_Spritesheet_01_5
+      name: T_UI_ButtonsBackground_01_5
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 512
-        height: 512
+        x: 1331
+        y: 72
+        width: 581
+        height: 518
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f5165db6b9ee1c14da8e8f03f5eef54a
-      internalID: -986854370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_UI_Spritesheet_01_6
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 766bbdd0e8c18b64896c859dec834903
-      internalID: -478202917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_UI_Spritesheet_01_7
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 109c0f28b41ffeb4b937d65979d4305e
-      internalID: -514667130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_UI_Spritesheet_01_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8726d9f8e4fabe744b3b5172f1ad2379
-      internalID: 707858429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_UI_Spritesheet_01_9
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d69d775dde9b454d9105611547f67da
-      internalID: 951716226
+      spriteID: 13e7af3051906cad0800000000000000
+      internalID: -2682446542186840527
       vertices: []
       indices: 
       edges: []
@@ -357,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9a7aa13c86b45c94da47b27fa76bc882
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -367,16 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      T_UI_Spritesheet_01_0: -1191184329
-      T_UI_Spritesheet_01_1: 2100587086
-      T_UI_Spritesheet_01_2: -1587514235
-      T_UI_Spritesheet_01_3: 2085492841
-      T_UI_Spritesheet_01_4: 336539560
-      T_UI_Spritesheet_01_5: -986854370
-      T_UI_Spritesheet_01_6: -478202917
-      T_UI_Spritesheet_01_7: -514667130
-      T_UI_Spritesheet_01_8: 707858429
-      T_UI_Spritesheet_01_9: 951716226
+      T_UI_ButtonsBackground_01_0: -7742423420635218963
+      T_UI_ButtonsBackground_01_1: 9061754786600856785
+      T_UI_ButtonsBackground_01_2: 6386278038023128094
+      T_UI_ButtonsBackground_01_3: 2428977239836308661
+      T_UI_ButtonsBackground_01_4: 1844375902126577707
+      T_UI_ButtonsBackground_01_5: -2682446542186840527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
