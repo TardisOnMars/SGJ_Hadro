@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/Win 3.unity
     guid: 603c43c22c071914ca2870b74f030e19
   - enabled: 1
+    path: Assets/Scenes/Level_4_Fusion.unity
+    guid: cae8e8ee230567e43a91313dd5f02f06
+  - enabled: 1
+    path: Assets/Scenes/Menus/Win 4.unity
+    guid: 627f30b2821674a49b9f1421c3ba948b
+  - enabled: 1
     path: Assets/Scenes/Menus/Lose.unity
     guid: cc2a00117588fae40818d7bb3b722cf0
   m_configObjects:
