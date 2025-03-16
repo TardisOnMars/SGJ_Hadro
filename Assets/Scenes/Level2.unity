@@ -2530,7 +2530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   food: 100
   decreaseRateMoving: 0.05
-  decreaseRateBreeding: 0.1
+  decreaseRateBreeding: 0.15
   isBreeding: 0
   foodBar: {fileID: 1125442190}
   individuals: []

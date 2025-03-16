@@ -198,7 +198,7 @@ MonoBehaviour:
   - {fileID: 2559431664706782617}
   - {fileID: 5185155276166732550}
   - {fileID: 578764343260047176}
-  _buildingSpeed: 0.3
+  _buildingSpeed: 0.25
   buildingFillBar: {fileID: 8138179800282425412}
   breedingBar: {fileID: 8909383837996642509}
   nestSprites:
@@ -206,8 +206,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 50515664661557944bf684009b898778, type: 3}
   - {fileID: 21300000, guid: 89d8151e12df77d439746a29904beb54, type: 3}
   younglingPrefab: {fileID: 8555290541229881334, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-  hatchingDuration: 8
+  hatchingDuration: 6
   currentHatchingTime: 0
+  _breedingSpeed: 0.15
 --- !u!50 &7891603240651088046
 Rigidbody2D:
   serializedVersion: 5
