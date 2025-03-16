@@ -179,8 +179,8 @@ MonoBehaviour:
   m_text: "Hum\u2026 La horde n\u2019a pas r\xE9ussi \xE0 survivre.\r\nTout est \xE0
     recommencer\u2026"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 83f3d7de8fa6d2149940b21c8dcec31f, type: 2}
+  m_sharedMaterial: {fileID: -7662000516964861790, guid: 83f3d7de8fa6d2149940b21c8dcec31f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -315,8 +315,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 83f3d7de8fa6d2149940b21c8dcec31f, type: 2}
+  m_sharedMaterial: {fileID: -7662000516964861790, guid: 83f3d7de8fa6d2149940b21c8dcec31f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -739,7 +739,7 @@ PrefabInstance:
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 11400000, guid: 83f3d7de8fa6d2149940b21c8dcec31f, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_fontSizeBase
       value: 43
@@ -747,7 +747,7 @@ PrefabInstance:
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: -7662000516964861790, guid: 83f3d7de8fa6d2149940b21c8dcec31f, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
