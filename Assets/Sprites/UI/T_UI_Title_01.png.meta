@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0e1dc9be018678541a7abccf85d31be2
+guid: 4cdb7dbf13b9ea44b94ee4fae3429253
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7018008835533156466
-    second: T_VFX_Shadow_01_0
+      213: -2054251307763341113
+    second: T_UI_Title_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T_VFX_Shadow_01_0
+      name: T_UI_Title_01_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 220
-        width: 489
-        height: 79
+        x: 0
+        y: 736
+        width: 2048
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 270b1885ad9f46160800000000000000
-      internalID: 7018008835533156466
+      spriteID: 7c86269c155dd73e0800000000000000
+      internalID: -2054251307763341113
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      T_VFX_Shadow_01_0: 7018008835533156466
+      T_UI_Title_01_0: -2054251307763341113
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

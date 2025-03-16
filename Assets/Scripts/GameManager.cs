@@ -66,11 +66,12 @@ public class GameManager : MonoBehaviour
         checkPopulation.Invoke();
     }
 
-    public void OnKillYoungling()
+    public void OnKillYoungling(GameObject youngling)
     {
         younglingCount--;
         individualTotalCount--;
         killYoungling.Invoke();
+        individuals.Remove(youngling);
         checkPopulation.Invoke();
     }
 
@@ -83,10 +84,11 @@ public class GameManager : MonoBehaviour
         checkPopulation.Invoke();
     }
     
-    public void OnKillHadro()
+    public void OnKillHadro(GameObject hadro)
     {
         hadroCount--;
         individualTotalCount--;
+        if(individuals.Contains(hadro)) individuals.Remove(hadro);
         killHadro.Invoke();
         checkPopulation.Invoke();
     }
@@ -96,10 +98,12 @@ public class GameManager : MonoBehaviour
         if (individualTotalCount >= victoryAmount)
         {
             Debug.Log("Victory!");
+            FindFirstObjectByType<SceneLoader>().LoadScene(2);
         }
         else if(individualTotalCount <= 0)
         {
             Debug.Log("Game Over!");
+            FindFirstObjectByType<SceneLoader>().LoadScene(3);
         }
     }
 }
