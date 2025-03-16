@@ -3368,11 +3368,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -621
+      value: -552
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -298
+      value: -374
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3388,7 +3388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5534697006896297287, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_Name
-      value: OptionButton
+      value: QuitButton
       objectReference: {fileID: 0}
     - target: {fileID: 5534697006896297287, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_IsActive
