@@ -9,7 +9,7 @@ public class Youngling : MonoBehaviour
     void Start()
     {
         AudioManager.Instance.PlaySoundOneShoot("EclosionOeuf");
-        timeBeforeAudio = Random.Range(2f, 5f);
+        timeBeforeAudio = Random.Range(8f, 20f);
     }
 
     void Update()
@@ -18,7 +18,7 @@ public class Youngling : MonoBehaviour
         if (currentTimerAudio > timeBeforeAudio)
         {
             AudioManager.Instance.PlaySoundOneShoot("PetitAmbiance" + Random.Range(1, 4).ToString());
-            timeBeforeAudio = Random.Range(2f, 5f);
+            timeBeforeAudio = Random.Range(8f, 20f);
             currentTimerAudio = 0f;
         }
     }
