@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1136244932731042524, guid: b5fcd454864854d4b8055fdaf9f02580, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5fcd454864854d4b8055fdaf9f02580, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2630,7 +2630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1136244932731042524, guid: b5fcd454864854d4b8055fdaf9f02580, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5fcd454864854d4b8055fdaf9f02580, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3670,7 +3670,7 @@ PrefabInstance:
     - target: {fileID: 2884815763262051222, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1136244932731042524, guid: b5fcd454864854d4b8055fdaf9f02580, type: 3}
+      objectReference: {fileID: 21300000, guid: b5fcd454864854d4b8055fdaf9f02580, type: 3}
     - target: {fileID: 2890943565634716022, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_Name
       value: PageTroodon
