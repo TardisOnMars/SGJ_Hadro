@@ -23,7 +23,7 @@ public class Nest : MonoBehaviour
     public GameObject younglingPrefab;
     public float hatchingDuration = 8f;
     public float currentHatchingTime;
-    private float _breedingSpeed =  0.3f;
+    public float _breedingSpeed =  0.3f;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
