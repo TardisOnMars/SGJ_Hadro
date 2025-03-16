@@ -171,7 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3beaf8cfde037ef41a8902cbd9e5cdad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillAmount: 0.5
+  fillAmount: 0.25
+  pageName: 
   eatenSprite: {fileID: -812778224130490224, guid: 174dbcc3c80451343be9c2d36e856593, type: 3}
   fullSprite: {fileID: 4668079990045818951, guid: 585b543cb154c614ba09c6a459cfc577, type: 3}
 --- !u!50 &12830307507606866
