@@ -4100,6 +4100,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9150962597210563701, guid: b56f53ded1535b74b97f43e4a78440a5, type: 3}
+      propertyPath: fullSprite
+      value: 
+      objectReference: {fileID: 4668079990045818951, guid: 585b543cb154c614ba09c6a459cfc577, type: 3}
+    - target: {fileID: 9150962597210563701, guid: b56f53ded1535b74b97f43e4a78440a5, type: 3}
+      propertyPath: eatenSprite
+      value: 
+      objectReference: {fileID: -812778224130490224, guid: 174dbcc3c80451343be9c2d36e856593, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

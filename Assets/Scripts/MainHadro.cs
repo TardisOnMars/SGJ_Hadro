@@ -108,12 +108,13 @@ public class MainHadro : MonoBehaviour
     }
     public void EatFood(Plant food)
     {
+        if (!food.OnEaten()) return;
+        
         this.food += food.fillAmount * 100;
         if (this.food > MAX_FOOD) this.food = MAX_FOOD;
         
         foodBar.FillAmount = Mathf.Clamp(this.food / MAX_FOOD, 0f, 1f);
         isStarving = false;
         currentStarvationTime = 0f;
-        Destroy(food.gameObject);
     }
 }
