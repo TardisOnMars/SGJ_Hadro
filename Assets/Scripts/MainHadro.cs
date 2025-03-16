@@ -48,7 +48,7 @@ public class MainHadro : MonoBehaviour
         }
         else
         {
-            food -= decreaseRateMoving * Time.deltaTime * MAX_FOOD * (GameManager.Instance.hadroCount + GameManager.Instance.younglingCount / 2.0f);
+            food -= decreaseRateMoving * Time.deltaTime * MAX_FOOD;
         }
 
         foodBar.FillAmount = Mathf.Clamp(food / MAX_FOOD, 0f, 1f);
@@ -110,7 +110,7 @@ public class MainHadro : MonoBehaviour
     {
         if (!food.OnEaten()) return;
         
-        this.food += food.fillAmount * 100;
+        this.food += food.fillAmount * 100 / (GameManager.Instance.hadroCount + GameManager.Instance.younglingCount / 2.0f);
         if (this.food > MAX_FOOD) this.food = MAX_FOOD;
         
         foodBar.FillAmount = Mathf.Clamp(this.food / MAX_FOOD, 0f, 1f);
