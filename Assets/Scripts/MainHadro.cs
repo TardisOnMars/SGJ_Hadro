@@ -17,8 +17,9 @@ public class MainHadro : MonoBehaviour
     public List<GameObject> individuals = new();
 
     private bool isStarving;
-    private Coroutine coStarving;
-    
+    public float starvationDuration = 4f;
+    private float currentStarvationTime = 0f;
+    public GameObject bonesPrefab;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +30,7 @@ public class MainHadro : MonoBehaviour
 
     private void UpdateIndividuals()
     {
+        Debug.Log("count individuals before update " + individuals.Count);
         foreach (var individual in GameManager.Instance.individuals)
         {
             if (!individuals.Contains(individual))
@@ -36,35 +38,9 @@ public class MainHadro : MonoBehaviour
                 individuals.Add(individual);
             }
         }
+        Debug.Log("count individuals after update " + individuals.Count);
     }
-    private IEnumerator CoStarving()
-    {
-        while (GameManager.Instance.individualTotalCount > 0)
-        {
-            yield return new WaitForSeconds(4);
-            if (individuals.Count == 0)
-            {
-                GameManager.Instance.OnKillHadro();
-            }
-            else
-            {
-                var toKill = individuals[0];
-                individuals.Remove(toKill);
-
-                if (toKill.GetComponent<Youngling>())
-                {
-                    GameManager.Instance.OnKillYoungling();
-                }
-                else if (toKill.GetComponent<Hadro>())
-                {
-                    GameManager.Instance.OnKillHadro();
-                }
-                Destroy(toKill);
-            }
-        }
-        Destroy(gameObject);
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -83,7 +59,39 @@ public class MainHadro : MonoBehaviour
         {
             foodBar.FillAmount = 0;
             isStarving = true;
-            coStarving = StartCoroutine(CoStarving());
+        }
+
+        if (isStarving)
+        {
+            currentStarvationTime += Time.deltaTime;
+            
+            if (currentStarvationTime >= starvationDuration)
+            {
+                currentStarvationTime = 0f;
+                
+                if (individuals.Count <= 0 )
+                {
+                    GameManager.Instance.OnKillHadro(gameObject);
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    var toKill = individuals[^1];
+
+                    if (toKill.GetComponent<Youngling>())
+                    {
+                        GameManager.Instance.OnKillYoungling(toKill);
+                    }
+                    else if (toKill.GetComponent<Hadro>())
+                    {
+                        GameManager.Instance.OnKillHadro(toKill);
+                    }
+                    var position = new Vector3(toKill.transform.position.x, toKill.transform.position.y, toKill.transform.position.z);
+                    individuals.Remove(toKill);
+                    Destroy(toKill);
+                    Instantiate(bonesPrefab, position, Quaternion.identity);
+                }
+            }
         }
     }
 
@@ -109,7 +117,7 @@ public class MainHadro : MonoBehaviour
         
         foodBar.FillAmount = Mathf.Clamp(this.food / MAX_FOOD, 0f, 1f);
         isStarving = false;
-        if(coStarving != null) StopCoroutine(coStarving);
+        currentStarvationTime = 0f;
         Destroy(food.gameObject);
     }
 }
