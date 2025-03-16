@@ -4933,8 +4933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: 100
-  decreaseRateMoving: 0.05
-  decreaseRateBreeding: 0.1
+  decreaseRateMoving: 0.03
+  decreaseRateBreeding: 0.08
   isBreeding: 0
   foodBar: {fileID: 1125442190}
   individuals: []
