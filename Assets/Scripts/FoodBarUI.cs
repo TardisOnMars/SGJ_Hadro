@@ -33,7 +33,8 @@ public class FoodBarUI : MonoBehaviour
     [ContextMenu("StartBlink")]
     public void StartBlinking()
     {
-       blinkingTween = stomachIcon.DOColor(blinkColor, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
+        if(blinkingTween == null)
+            blinkingTween = stomachIcon.DOColor(blinkColor, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
     }
 
     [ContextMenu("StopBlinking")]
@@ -44,6 +45,7 @@ public class FoodBarUI : MonoBehaviour
         blinkingTween.Complete();
         blinkingTween.Kill();
         stomachIcon.color = Color.white;
+        blinkingTween = null;
     }
 
 }

@@ -12,7 +12,7 @@ public class MainHadro : MonoBehaviour
     public float decreaseRateBreeding = 0.3f;
     public bool isBreeding = false;
 
-    public FillBar foodBar;
+    public FoodBarUI foodBar;
 
     public List<GameObject> individuals = new();
 
