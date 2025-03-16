@@ -327,8 +327,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 345, y: 0}
-  m_SizeDelta: {x: 284.6857, y: 255.4016}
+  m_AnchoredPosition: {x: 351, y: -0.000026703}
+  m_SizeDelta: {x: 262.6026, y: 250.4943}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &99517896270594582
 CanvasRenderer:
@@ -358,7 +358,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 951716226, guid: 923851023ec7bd9438b3b87412dca016, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 90c860f36f82e1244b5b80fc03880805, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -971,10 +971,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Podozamites sont des conif\xE8res du m\xE9sozo\xEFque \xE0 large feuille
     et de taille\u2026 similaire \xE0 la taille d\u2019une foug\xE8re actuelle !
-    Il n\u2019y a qu\u2019\xE0 se baisser pour la grailler !\r\n"
+    \n\nIl n\u2019y a qu\u2019\xE0 se baisser pour la grailler !\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
-  m_sharedMaterial: {fileID: 3652190874790443681, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+  m_sharedMaterial: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1110,7 +1110,7 @@ MonoBehaviour:
   m_text: "Carnet de pal\xE9ontologue"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
-  m_sharedMaterial: {fileID: 3652190874790443681, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+  m_sharedMaterial: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1141,8 +1141,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2485,7 +2485,7 @@ MonoBehaviour:
   m_text: Podozamites
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
-  m_sharedMaterial: {fileID: 3652190874790443681, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+  m_sharedMaterial: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2740,11 +2740,11 @@ PrefabInstance:
         d\xF4mes de terre de 3 m\xE8tres de diam\xE8tre dont le sommet est creus\xE9
         pour accueillir les \u0153ufs. Les \u0153ufs \xE9taient recouverts de d\xE9bris
         v\xE9g\xE9taux pour maintenir une temp\xE9rature parfaite pour le d\xE9veloppement
-        des b\xE9b\xE9s. De plus, cela permettait aussi de dissimuler les \u0153ufs
+        des embryons. De plus, cela permettait aussi de dissimuler les \u0153ufs
         de certains pr\xE9dateurs. Les nids ayant moins besoin d\u2019\xEAtre surveill\xE9s,
         les parents pouvaient alors faire de nouveaux nids simultan\xE9ment. On estime
-        qu'Hypacrosaurus pondait une vingtaine d'\u0153ufs par nids. Avec autant
-        de petits, la horde va vite devenir immense !"
+        qu'<i>Hypacrosaurus</i> pondait une vingtaine d'\u0153ufs par nids. \n\nAvec
+        autant de petits, la horde va vite devenir immense !"
       objectReference: {fileID: 0}
     - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_fontSize
@@ -2942,7 +2942,7 @@ PrefabInstance:
     - target: {fileID: 2884815763262051222, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 951716226, guid: 923851023ec7bd9438b3b87412dca016, type: 3}
+      objectReference: {fileID: 21300000, guid: 90c860f36f82e1244b5b80fc03880805, type: 3}
     - target: {fileID: 2890943565634716022, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_Name
       value: BlankPage
@@ -2953,19 +2953,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 284.6857
+      value: 262.6026
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 255.4016
+      value: 260.3089
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -373
+      value: -356
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 18
+      value: 13.103
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3345,6 +3345,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Troodon
       objectReference: {fileID: 0}
+    - target: {fileID: 685206450421493422, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_fontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2884815763262051222, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3419,11 +3423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_text
-      value: "Troodon ou la \"dent blessante\" \xE9tait un petit pr\xE9dateur \xE9l\xE9gant
-        couvert de plumes qui ressemble \xE9trangement \xE0 un gros oiseau avec des
-        dents. Ce pr\xE9dateur peureux n'attaquaient que les proies faciles. Ils
-        \xE9taient des cousins des oiseaux modernes. Les rapaces, les pies, et les
-        moineaux sont donc bien eux aussi des dinosaures !"
+      value: "<i>Troodon</i> ou la \"dent blessante\" \xE9tait un petit pr\xE9dateur
+        \xE9l\xE9gant couvert de plumes qui ressemble \xE9trangement \xE0 un gros
+        oiseau avec des dents. Ce pr\xE9dateur peureux n'attaquaient que les proies
+        faciles.\n\nIls \xE9taient des cousins des oiseaux modernes. Les rapaces,
+        les pies, et les moineaux sont donc bien eux aussi des dinosaures !"
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3703,8 +3707,8 @@ PrefabInstance:
     - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_text
       value: "Weichselia est une foug\xE8re arborescente du Cr\xE9tac\xE9. Cet arbre
-        avait des affinit\xE9s avec les milieux secs. Un repas juteux pour un hadrosaure
-        !"
+        avait des affinit\xE9s avec les milieux secs. \n\nUn repas juteux pour un
+        hadrosaure !"
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3894,6 +3898,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Comment jouer
       objectReference: {fileID: 0}
+    - target: {fileID: 685206450421493422, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 685206450421493422, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2089370932875668674, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.93670654
@@ -3970,6 +3982,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Ceci est un super tuto
       objectReference: {fileID: 0}
+    - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 228.9965
@@ -4239,9 +4259,9 @@ PrefabInstance:
         ils ont colonis\xE9 le monde entier ! Incroyable !\r\nJe me demande bien
         comment ils ont fait ! Je vais me renseigner sur leur \xE9cologie et prendre
         des notes dans mon carnet pour mieux comprendre.\r\nCet hadrosaure est un
-        Hypacrosaurus adulte. Il est bien reconnaissable avec sa cr\xEAte frontale
-        !  Celui-ci a \xE9t\xE9 retrouv\xE9 seul, loin de sa horde. Le pauvre a d\xFB
-        perdre son troupeau et se retrouver seul dans un environnement encore inconnu
+        <i>Hypacrosaurus</i> adulte. Il est bien reconnaissable avec sa cr\xEAte
+        frontale !  Celui-ci a \xE9t\xE9 retrouv\xE9 seul, loin de sa horde. Le pauvre
+        a d\xFB perdre son troupeau et se retrouver seul dans un environnement inconnu
         ! J\u2019aurai bien aim\xE9 pouvoir l\u2019observer pour savoir s'il a r\xE9ussi
         \xE0 s'adapter \xE0 ce nouvel environnement et \xE0 fonder une nouvelle horde\u2026"
       objectReference: {fileID: 0}
@@ -4250,16 +4270,28 @@ PrefabInstance:
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+    - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_fontSizeBase
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+    - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_VerticalAlignment
-      value: 512
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4405,6 +4437,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Hypacrosaurus
       objectReference: {fileID: 0}
+    - target: {fileID: 685206450421493422, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_fontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2089370932875668674, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.93670654
@@ -4495,7 +4531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_text
-      value: "Hypacrosaurus faisait partie de la famille des dinosaures hadrosaures.
+      value: "<i>Hypacrosaurus</i> faisait partie de la famille des dinosaures hadrosaures.
         Je les trouve rigolos avec leur \u201Cbec de canard\". Certains de ces animaux
         avaient des cr\xEAtes frontales extravagantes et des capacit\xE9s de m\xE2chonnage
         unique dans l'histoire de la vie sur Terre ! Ils m\xE2chaient tellement qu\u2019ils
@@ -4507,15 +4543,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 315.4982
+      value: 271.332
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 132.34
+      value: 115.9822
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9816273
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4527,19 +4563,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.19080894
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -374
+      value: -353
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 139
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6648255527881493257, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4709,19 +4745,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 544361791319229088, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 303.882
+      value: 307.1535
       objectReference: {fileID: 0}
     - target: {fileID: 544361791319229088, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 337.746
+      value: 360.7184
       objectReference: {fileID: 0}
     - target: {fileID: 544361791319229088, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 347.28928
+      value: 352.18634
       objectReference: {fileID: 0}
     - target: {fileID: 544361791319229088, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -63.896137
+      value: -47.499714
       objectReference: {fileID: 0}
     - target: {fileID: 685206450421493422, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_text
@@ -4730,6 +4766,14 @@ PrefabInstance:
     - target: {fileID: 2089370932875668674, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.93670654
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876487129014990273, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 352.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876487129014990273, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 354
       objectReference: {fileID: 0}
     - target: {fileID: 2890943565634716022, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_Name
@@ -4803,7 +4847,7 @@ PrefabInstance:
         Dans ces coprolithes, on retrouve des restes de conif\xE8res et de foug\xE8re
         du cr\xE9tac\xE9, mais \xE9galement des d\xE9bris de bois pourri que ces
         animaux devaient m\xE2cher pour se nourrir des champignons et des insectes
-        qui \xE9taient dedans. Plus surprenant encore, on a retrouv\xE9 de fa\xE7on
+        qui \xE9taient dedans. \n\nPlus surprenant encore, on a retrouv\xE9 de fa\xE7on
         plus exceptionnelle des crabes dans les coprolithes ! Ces animaux ne se privaient
         pas de go\xFBter \xE0 tout.\r\n\r\nLes pal\xE9ontologues ont \xE9galement
         retrouv\xE9 des traces de vers parasites dans ces coprolithes. Preuve que
@@ -5061,11 +5105,11 @@ PrefabInstance:
     - target: {fileID: 4366638216181865123, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_text
       value: "M\xEAme si certains hadrosaures nourrissaient les jeunes au nid comme
-        l\u2019esp\xE8ce Maiasaura, les jeunes Hypacrosaurus, eux, quittaient le
-        nid rapidement apr\xE8s l\u2019\xE9closion pour suivre les parents. Les jeunes
-        Hypacrosaurus formaient des hordes d'individus de m\xEAme \xE2ge, probablement
-        surveill\xE9s par un adulte, parent ou voisin. Attention : invasion de b\xE9b\xE9s
-        dino-canards imminente !\r\n"
+        l\u2019esp\xE8ce <i>Maiasaura</i>, les jeunes <i>Hypacrosaurus</i>, eux,
+        quittaient le nid rapidement apr\xE8s l\u2019\xE9closion pour suivre les
+        parents. Les jeunes <i>Hypacrosaurus</i> formaient des hordes d'individus
+        de m\xEAme \xE2ge, probablement surveill\xE9s par un adulte, parent ou voisin.
+        \n\nAttention : invasion de b\xE9b\xE9s dino-canards imminente !\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5174040311768870830, guid: d278cf51b3796144eb053b7c06c1d54e, type: 3}
       propertyPath: m_SizeDelta.x
