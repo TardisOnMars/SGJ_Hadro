@@ -2252,7 +2252,7 @@ SpriteRenderer:
   m_Size: {x: 26.500002, y: 9.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &552835124
@@ -4356,63 +4356,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dccedcb6efd42ce4382659ef18dd3e8b, type: 3}
---- !u!1001 &1019069490
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.074819
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.04692538
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4431559977651159403, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555290541229881334, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
-      propertyPath: m_Name
-      value: Youngling
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3ce4b70d373b91c459e1024c61f181ee, type: 3}
 --- !u!1001 &1032697020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4960,11 +4903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a904a33a0ecb8b45b2a68354e77484e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   graphicRaycaster: {fileID: 1413052817}
-=======
-  graphicRaycaster: {fileID: 0}
->>>>>>> 6209e2b4e26e4600e6c4fce4b108fc89c01c2eee
   groundLayer:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -6901,11 +6840,7 @@ MonoBehaviour:
   hadroCount: 1
   individualTotalCount: 1
   younglingEnemyCount: 0
-<<<<<<< HEAD
   mainHadro: {fileID: 1153161113}
-=======
-  mainHadro: {fileID: 0}
->>>>>>> 6209e2b4e26e4600e6c4fce4b108fc89c01c2eee
   individuals: []
   younglingEnemies: []
   victoryAmount: 5
@@ -6936,11 +6871,7 @@ MonoBehaviour:
   checkPopulation:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< HEAD
   attackButtonCanvas: {fileID: 1413052819}
-=======
-  attackButtonCanvas: {fileID: 0}
->>>>>>> 6209e2b4e26e4600e6c4fce4b108fc89c01c2eee
 --- !u!1001 &1761902869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9107,11 +9038,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-<<<<<<< HEAD
-  - {fileID: 2053295915}
-=======
   - {fileID: 5115109386331596207}
->>>>>>> 6209e2b4e26e4600e6c4fce4b108fc89c01c2eee
   - {fileID: 519420032}
   - {fileID: 1413052816}
   - {fileID: 1911051096}
@@ -9249,4 +9176,4 @@ SceneRoots:
   - {fileID: 980162060}
   - {fileID: 1826719243}
   - {fileID: 552835124}
-  - {fileID: 1019069490}
+  - {fileID: 2053295915}
