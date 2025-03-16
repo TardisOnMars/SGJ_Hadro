@@ -11,6 +11,7 @@ public class YounglingEnemy : MonoBehaviour
     private bool _isHunting;
     private int _attacked;
     private List<FleeingTarget> _fleeingTargets;
+    public GameObject fleeIcon;
 
     void Start()
     {
@@ -34,12 +35,17 @@ public class YounglingEnemy : MonoBehaviour
         }
         else
         {
+            fleeIcon.SetActive(true);
             agent.SetDestination(_fleeingTargets[Random.Range(0, _fleeingTargets.Count-1)].transform.position);
-            agent.speed = agent.remainingDistance;
+            agent.speed = 30f;
         }
 
     }
 
+    public bool IsHunting()
+    {
+        return _isHunting;
+    }
     public void SetTarget(Transform t)
     {
         _target = t;

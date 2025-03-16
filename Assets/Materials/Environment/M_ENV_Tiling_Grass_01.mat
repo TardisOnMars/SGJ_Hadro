@@ -89,8 +89,8 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColor: {r: 1, g: 0.95425826, b: 0.28773582, a: 0}
-    - _Noise_01_Color: {r: 0.9669811, g: 1, b: 0.9814269, a: 0}
-    - _Noise_02_Color: {r: 0.96611744, g: 1, b: 0.759434, a: 0}
+    - _Noise_01_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 0}
+    - _Noise_02_Color: {r: 0.10457956, g: 0.3207547, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

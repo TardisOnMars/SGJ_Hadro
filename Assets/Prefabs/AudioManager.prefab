@@ -176,14 +176,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
+  - {fileID: 8300000, guid: cd088a075b6b2f04ab417dd37cfa2c21, type: 3}
+  - {fileID: 8300000, guid: fdc179657ddeae24aa229f6f7e65ec8a, type: 3}
+  - {fileID: 8300000, guid: f06ad84ca0f364949acaae62c9bce07d, type: 3}
+  - {fileID: 8300000, guid: 89565b5f56de9df40af6d4ac034258d6, type: 3}
+  - {fileID: 8300000, guid: 05ae4a04dffa6a94885eb3bb00fde377, type: 3}
+  - {fileID: 8300000, guid: 1da38f8b9c87e2f4fb6a4feeec282569, type: 3}
+  - {fileID: 8300000, guid: f96e72516640d5a4bb540b53892afe61, type: 3}
   - {fileID: 8300000, guid: 5327f9cfad9d21c4eb696480858b7131, type: 3}
   - {fileID: 8300000, guid: d6313c55d682f07449a0074d6011d123, type: 3}
   - {fileID: 8300000, guid: e8e3edec425e06741832531b1a7bae50, type: 3}
   - {fileID: 8300000, guid: a286ed2d06b90c64192fcbe196db8c20, type: 3}
+  - {fileID: 8300000, guid: 789fb5b1395696544b7798550d3493aa, type: 3}
+  - {fileID: 8300000, guid: 429fea8db4ece27498d5be88916dbd84, type: 3}
+  - {fileID: 8300000, guid: 0028676c6c372ad45b9de1385a013c91, type: 3}
+  - {fileID: 8300000, guid: 9e9159bf21c16c045a4496767b650852, type: 3}
+  - {fileID: 8300000, guid: bdf0f8714c6e1064abfc801fc642d87a, type: 3}
+  - {fileID: 8300000, guid: 2e7f6c73fdfc0cc4b9ffa13ab8f64db5, type: 3}
   - {fileID: 8300000, guid: 6eae9d6cb02daaf43894e6419e4917fb, type: 3}
+  - {fileID: 8300000, guid: 02c4faa870fd663458eda18da7e32d99, type: 3}
   oneShootSource: {fileID: 375276466978891020}
   ambientMusicSource: {fileID: 21201169190933253}
-  ambientMusic: {fileID: 0}
+  ambientMusic: {fileID: 8300000, guid: 7f2262defe42ce04aaa8f2e33cda132b, type: 3}
 --- !u!1 &8798770725626773043
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,7 +245,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

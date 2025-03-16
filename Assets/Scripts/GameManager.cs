@@ -121,12 +121,13 @@ public class GameManager : MonoBehaviour
         if (individualTotalCount >= victoryAmount)
         {
             Debug.Log("Victory!");
-            FindFirstObjectByType<SceneLoader>().LoadScene(2);
+            FindFirstObjectByType<SceneLoader>().LoadNextScene();
         }
         else if(individualTotalCount <= 0)
         {
+            AudioManager.Instance.PlaySoundOneShoot("AdulteMort");
             Debug.Log("Game Over!");
-            FindFirstObjectByType<SceneLoader>().LoadScene(3);
+            FindFirstObjectByType<SceneLoader>().LoadScene(7);
         }
 
         if (younglingEnemyCount > 0)
@@ -141,9 +142,10 @@ public class GameManager : MonoBehaviour
 
     public void OnAttack()
     {
+        AudioManager.Instance.PlaySoundOneShoot("AdulteGrogne");
         foreach (var enemy in younglingEnemies)
         {
-            if (Vector3.Distance(mainHadro.transform.position, enemy.transform.position) < 5f)
+            if (Vector3.Distance(mainHadro.transform.position, enemy.transform.position) < 10f)
             {
                 var younglingEnemy = enemy.GetComponent<YounglingEnemy>();
                 younglingEnemy.OnAttacked();

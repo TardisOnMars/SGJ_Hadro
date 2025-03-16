@@ -61,6 +61,7 @@ public class MainHadro : MonoBehaviour
 
         if (isStarving)
         {
+            AudioManager.Instance.PlaySoundOneShoot("AdulteAffame");
             currentStarvationTime += Time.deltaTime;
             
             if (currentStarvationTime >= starvationDuration)
@@ -102,10 +103,6 @@ public class MainHadro : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log("OnCollisionEnter "+other.gameObject.name);
-    }
     public void EatFood(Plant food)
     {
         if (!food.OnEaten()) return;

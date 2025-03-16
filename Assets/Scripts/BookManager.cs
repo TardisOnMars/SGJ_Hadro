@@ -27,6 +27,7 @@ public class BookManager : MonoBehaviour
 
     public void nextPage()
     {
+        AudioManager.Instance.PlaySoundOneShoot("CarnetChangement");
         if(unlockedPages[currentPage + 1])
         {
             pagesList[currentPage].SetActive(false);
@@ -48,6 +49,7 @@ public class BookManager : MonoBehaviour
 
     public void previousPage()
     {
+        AudioManager.Instance.PlaySoundOneShoot("CarnetChangement");
         if (unlockedPages[currentPage - 1])
         {
             pagesList[currentPage].SetActive(false);
@@ -65,5 +67,15 @@ public class BookManager : MonoBehaviour
             leftArrow.SetActive(false);
         }
         rightArrow.SetActive(true);
+    }
+
+    public void PlayOpenSound()
+    {
+        AudioManager.Instance.PlaySoundOneShoot("CarnetOuverture");
+    }
+    
+    public void PlayCloseSound()
+    {
+        AudioManager.Instance.PlaySoundOneShoot("CarnetFermeture");
     }
 }
