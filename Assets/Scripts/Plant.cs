@@ -5,6 +5,7 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     public float fillAmount = 1f;
+    public string pageName;
     public Sprite eatenSprite;
     public Sprite fullSprite;
     private SpriteRenderer spriteRenderer;
@@ -19,6 +20,7 @@ public class Plant : MonoBehaviour
     {
         if (!_isEaten)
         {
+            AudioManager.Instance.PlaySoundOneShoot("MangerPlante");
             spriteRenderer.sprite = eatenSprite;
             StartCoroutine(GrowBack());
             _isEaten = true;
@@ -30,7 +32,7 @@ public class Plant : MonoBehaviour
 
     IEnumerator GrowBack()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(25f);
         spriteRenderer.sprite = fullSprite;
         _isEaten = false;
     }

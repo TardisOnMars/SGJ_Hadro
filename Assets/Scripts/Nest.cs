@@ -69,6 +69,7 @@ public class Nest : MonoBehaviour
             breedingBar.FillAmount += _breedingSpeed * Time.deltaTime;
             if (breedingBar.FillAmount >= 1f)
             {
+                AudioManager.Instance.PlaySoundOneShoot("PoserOeufs");
                 _eggAmount = 3;
                 
                 GameManager.Instance.OnAddEgg();
@@ -105,6 +106,7 @@ public class Nest : MonoBehaviour
         {
             _isBuilding = true;
             buildingFillBar.gameObject.SetActive(true);
+            AudioManager.Instance.PlaySoundOneShoot("CreerNid");
         }
         else if (!_isBreeding && _eggAmount == 0)
         {
