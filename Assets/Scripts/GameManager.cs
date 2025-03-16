@@ -12,7 +12,10 @@ public class GameManager : MonoBehaviour
     public int younglingCount = 0;
     public int hadroCount = 0;
     public int individualTotalCount = 0;
+    public int younglingEnemyCount = 0;
+    public GameObject mainHadro;
     public List<GameObject> individuals = new();
+    public List<GameObject> younglingEnemies = new();
     public int victoryAmount = 5;
 
     public UnityEvent addEgg = new();
@@ -21,8 +24,12 @@ public class GameManager : MonoBehaviour
     public UnityEvent killYoungling= new();
     public UnityEvent addHadro= new();
     public UnityEvent killHadro= new();
+    public UnityEvent addYounglingEnemy = new();
+    public UnityEvent killYounglingEnemy = new();
     
     public UnityEvent checkPopulation = new();
+
+    public Canvas attackButtonCanvas;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -93,6 +100,22 @@ public class GameManager : MonoBehaviour
         checkPopulation.Invoke();
     }
 
+    public void OnAddYounglingEnemy(GameObject enemy)
+    {
+        younglingEnemyCount++;
+        younglingEnemies.Add(enemy);
+        addYounglingEnemy.Invoke();
+        checkPopulation.Invoke();
+    }
+    
+    public void OnKillYounglingEnemy(GameObject enemy)
+    {
+        younglingEnemyCount--;
+        younglingEnemies.Remove(enemy);
+        killYounglingEnemy.Invoke();
+        checkPopulation.Invoke();
+    }
+    
     public void OnCheckPopulation()
     {
         if (individualTotalCount >= victoryAmount)
@@ -104,6 +127,27 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Game Over!");
             FindFirstObjectByType<SceneLoader>().LoadScene(3);
+        }
+
+        if (younglingEnemyCount > 0)
+        {
+            attackButtonCanvas.enabled = true;
+        }
+        else
+        {
+            attackButtonCanvas.enabled = false;
+        }
+    }
+
+    public void OnAttack()
+    {
+        foreach (var enemy in younglingEnemies)
+        {
+            if (Vector3.Distance(mainHadro.transform.position, enemy.transform.position) < 5f)
+            {
+                var younglingEnemy = enemy.GetComponent<YounglingEnemy>();
+                younglingEnemy.OnAttacked();
+            }
         }
     }
 }
