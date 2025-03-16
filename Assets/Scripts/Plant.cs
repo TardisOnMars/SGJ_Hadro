@@ -31,7 +31,7 @@ public class Plant : MonoBehaviour
 
     IEnumerator GrowBack()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(25f);
         spriteRenderer.sprite = fullSprite;
         _isEaten = false;
     }
