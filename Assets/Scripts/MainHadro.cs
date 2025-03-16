@@ -30,7 +30,6 @@ public class MainHadro : MonoBehaviour
 
     private void UpdateIndividuals()
     {
-        Debug.Log("count individuals before update " + individuals.Count);
         foreach (var individual in GameManager.Instance.individuals)
         {
             if (!individuals.Contains(individual))
@@ -38,7 +37,6 @@ public class MainHadro : MonoBehaviour
                 individuals.Add(individual);
             }
         }
-        Debug.Log("count individuals after update " + individuals.Count);
     }
     
     // Update is called once per frame
@@ -98,10 +96,8 @@ public class MainHadro : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("OnTriggerEnter");
         if (other.gameObject.layer == LayerMask.NameToLayer("Collectible"))
         {
-            //TOO foutre un delay pour l'anim
             EatFood(other.GetComponent<Plant>());
         }
     }

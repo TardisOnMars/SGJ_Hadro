@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1ccb4cca8e4ee614bbf969e16d9a8453
+guid: 682b501dd6d62dc459695048ab75555f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6551654405270025110
-    second: T_UI_SplashArt_01 1_0
+      213: -1324113989717306550
+    second: T_VFX_Cloud_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T_UI_SplashArt_01 1_0
+      name: T_VFX_Cloud_01_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6cc1c2d709d315a0800000000000000
-      internalID: -6551654405270025110
+      spriteID: a4356c0875dcf9de0800000000000000
+      internalID: -1324113989717306550
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      T_UI_SplashArt_01 1_0: -6551654405270025110
+      T_VFX_Cloud_01_0: -1324113989717306550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
