@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
@@ -20,12 +21,32 @@ public class Player : MonoBehaviour
     
     private NavMeshAgent _agent;
 
+    private Tween _tweenAwoke;
+
     public void Start()
     {
         _clickData = new PointerEventData(EventSystem.current);
         _raycastResults = new List<RaycastResult>();
         _agent = GetComponent<NavMeshAgent>();
         moveAction.action.performed += SetDestination;
+    }
+
+    void Update()
+    {
+        if (_agent.velocity.magnitude > 0.1f)
+        {
+            if(_tweenAwoke == null)
+                _tweenAwoke = transform.DOScaleY(transform.localScale.y + 0.1f, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
+        }
+        else
+        {
+            DOTween.Kill(_tweenAwoke);
+            _tweenAwoke.SetLoops(0);
+            _tweenAwoke.Complete();
+            _tweenAwoke.Kill();
+            _tweenAwoke = null;
+            transform.localScale = new Vector3(transform.localScale.x, 1, 1);
+        }
     }
 
     public void SetDestination(InputAction.CallbackContext context)
