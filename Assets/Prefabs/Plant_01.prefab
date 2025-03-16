@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillAmount: 0.3
+  eatenSprite: {fileID: -812778224130490224, guid: 174dbcc3c80451343be9c2d36e856593, type: 3}
+  fullSprite: {fileID: 4668079990045818951, guid: 585b543cb154c614ba09c6a459cfc577, type: 3}
 --- !u!50 &12830307507606866
 Rigidbody2D:
   serializedVersion: 5

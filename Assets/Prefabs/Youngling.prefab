@@ -203,7 +203,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1
+  m_Radius: 1.5
 --- !u!114 &4725886406510744631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,3 +216,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f5391652f37f4499060c5a16936387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonesPile: {fileID: 1799556718294474956, guid: d8f85039f4c0cc649a0327cd22473c53, type: 3}

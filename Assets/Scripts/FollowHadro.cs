@@ -26,7 +26,6 @@ public class FollowHadro : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Youngling " + collider.name);
         if (collider.CompareTag("MainHadro"))
         {
             isFollowing = true;
