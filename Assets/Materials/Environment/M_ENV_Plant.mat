@@ -91,6 +91,7 @@ Material:
     - _WindScale: 0.25
     - _Wind_1: 1
     - _ZWrite: 0
+    - _test: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColor: {r: 1, g: 0.95425826, b: 0.28773582, a: 0}

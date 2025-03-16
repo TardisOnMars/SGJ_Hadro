@@ -312,8 +312,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
-  m_sharedMaterial: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -448,8 +448,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Les Hadrosaures c'est trop cool
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
-  m_sharedMaterial: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -584,8 +584,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Projet scientifique du blaireau masqu\xE9"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 288b6e16bf5b0784a8e896588b976f3b, type: 2}
-  m_sharedMaterial: {fileID: 5967630792276141940, guid: 288b6e16bf5b0784a8e896588b976f3b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1212,28 +1212,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Les hadrosaures forment une des familles de vert\xE9br\xE9s les plus diversifi\xE9s
-    dans l\u2019histoire de la vie sur Terre. Ils sont notamment connus pour la diversit\xE9
-    de formes de leur cr\xEAte frontale et leurs capacit\xE9 masticatrice unique
-    dans l\u2019histoire de la vie sur Terre. A travers 5 \xE9pisodes de dispersion,
-    ils colonisent au Cr\xE9tac\xE9 tous les continents, et de nombreux environnements,
-    des pal\xE9o-tropiques aux pal\xE9o-p\xF4les. C\u2019est exceptionnel ! Certains
-    scientifiques pensent m\xEAme qu\u2019ils sont responsables de la chute de la
-    diversit\xE9 des dinosaures Triceratops et Ankylosaures avant la chute de m\xE9t\xE9orite
-    qui causera leur extinction il y a 66 millions d\u2019ann\xE9es. Je cherche donc
-    \xE0 reconstituer les traits \xE9cologiques de ces animaux en lien avec leur
-    environnement afin de mieux comprendre leur succ\xE8s \xE9volutif et leur extinction.
-    Je m\u2019int\xE9resse \xE0 leur reproduction car la survie d\u2019une population
-    d\xE9pend de la survie des jeunes, et \xE0 leur comportement migrateur permettant
-    un meilleur acc\xE8s aux ressources.\r\n\r\nPour ce faire, je r\xE9colte des
-    indices pal\xE9ontologiques sur le terrain, j\u2019\xE9tudie la forme de leurs
-    os, et j\u2019analyse les compositions chimiques des squelettes et des \u0153ufs.
-    \r\n\r\nHadro! est un jeu qui s'appuie sur ces observations et analyses pour
-    offrir une exp\xE9rience immersive et ludique du suivi de la vie d\u2019un hadrosaure,
-    et plus particuli\xE8rement de l\u2019esp\xE8ce Hypacrosaurus stebingeri. "
+  m_text: "Ce jeu a pour but de se familiaris\xE9 avec les hadrosaures, ou \"dinosaures
+    \xE0 bec de canard\", et de comprendre \xE0 travers leur \xE9cologie leur succ\xE8s
+    \xE9volutif au Cr\xE9tac\xE9.\r\n\r\nLes hadrosaures forment une des familles
+    de vert\xE9br\xE9s les plus diversifi\xE9s dans l\u2019histoire de la vie sur
+    Terre. Ils sont notamment connus pour la diversit\xE9 de formes de leur cr\xEAte
+    frontale et leurs capacit\xE9 masticatrice unique dans l\u2019histoire de la
+    vie sur Terre.  A travers 5 \xE9pisodes de dispersion, ils colonisent au Cr\xE9tac\xE9
+    tous les continents, et de nombreux environnements, des pal\xE9o-tropiques aux
+    pal\xE9o-p\xF4les. C\u2019est exceptionnel ! Certains scientifiques pensent m\xEAme
+    qu\u2019ils sont responsables de la chute de la diversit\xE9 des dinosaures triceratops
+    et ankylosaures avant la chute de m\xE9t\xE9orite qui causera leur extinction
+    il y a 66 millions d\u2019ann\xE9es. \r\nHadro! est un jeu qui a pour but de
+    faire d\xE9couvrir le mode de vie des hadrosaures, ces sympathiques animaux \xE9teints.
+    Qui \xE9taient-ils ? Que mangeaient-t-il ? Qui les mangeaient ? Hadro! offre
+    une exp\xE9rience immersive et ludique du suivi de la vie de l'hadrosaure Hypacrosaurus
+    stebingeri. Combien d\u2019\u0153ufs pondait-il ? Les couvait-il ? Aidait-il
+    ses jeunes \xE0 la naissance ? Migraient-ils en horde ? Toutes les r\xE9ponses
+    se trouvent dans le jeu ! Des informations compl\xE9mentaires et\r\nsurprenantes
+    sont pr\xE9sent\xE9es dans le carnet du pal\xE9ontologue.mersive et ludique du
+    suivi de la vie d\u2019un hadrosaure, et plus particuli\xE8rement de l\u2019esp\xE8ce
+    Hypacrosaurus stebingeri. "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 288b6e16bf5b0784a8e896588b976f3b, type: 2}
-  m_sharedMaterial: {fileID: 5967630792276141940, guid: 288b6e16bf5b0784a8e896588b976f3b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1309,6 +1311,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524023793}
   m_CullTransparentMesh: 1
+--- !u!1 &577267466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5534697006896297287, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
+  m_PrefabInstance: {fileID: 1867477120830119546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &665262240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6551654405270025110, guid: 1ccb4cca8e4ee614bbf969e16d9a8453, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 114c8287d40293a45bbb1b1483a3b097, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1454,11 +1461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -621
+      value: -552
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -308.51
+      value: -211
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1569,11 +1576,11 @@ PrefabInstance:
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -1733,11 +1740,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -621
+      value: -552
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 179
+      value: 94
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1842,11 +1849,11 @@ PrefabInstance:
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -2167,11 +2174,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<b>Le blaireau masqu\xE9</b> - doctorant au LGL-TPE\r\n\r<b>Arthur Pardieu</b>
     - D\xE9veloppeur\r\n\r<b>Sophie Villenave</b> - D\xE9veloppeur\r\n\r<b>Hadrien
-    Grasland</b> - Sound design\r\n<b>Eloi</b> - Artiste 2D\r\n\r<b>Nathan</b> -
-    Artiste 2D\r\n<b>Florent Jamin</b> - Game Design"
+    Grasland</b> - Sound design\r\n<b>Eloi Landes</b> - Artiste 2D\r\n\r<b>Nathan
+    Krier</b> - Artiste 2D\r\n<b>Florent Jamin</b> - Game Design"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 288b6e16bf5b0784a8e896588b976f3b, type: 2}
-  m_sharedMaterial: {fileID: 5967630792276141940, guid: 288b6e16bf5b0784a8e896588b976f3b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2317,11 +2324,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -621.00006
+      value: -552.00006
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.604233
+      value: -58.395767
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2432,11 +2439,11 @@ PrefabInstance:
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -2668,8 +2675,8 @@ RectTransform:
   - {fileID: 1687625117}
   - {fileID: 1248505029}
   - {fileID: 1502946219}
-  - {fileID: 1867477120830119547}
   - {fileID: 1062342819}
+  - {fileID: 1867477120830119547}
   m_Father: {fileID: 1323678377}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2767,15 +2774,15 @@ RectTransform:
   m_GameObject: {fileID: 1687625116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.33495244, y: 0.33495244, z: 0.33495244}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1630987039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 496, y: -147}
-  m_SizeDelta: {x: 797.42, y: 218.0529}
+  m_AnchoredPosition: {x: 440, y: -207}
+  m_SizeDelta: {x: 2048, y: 2048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1687625119
 CanvasRenderer:
@@ -2805,7 +2812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2054251307763341113, guid: 4cdb7dbf13b9ea44b94ee4fae3429253, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aafb87d62be299841a740866e4f6f00f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3365,7 +3372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -146.49323
+      value: -298
       objectReference: {fileID: 0}
     - target: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3382,6 +3389,10 @@ PrefabInstance:
     - target: {fileID: 5534697006896297287, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_Name
       value: OptionButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534697006896297287, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -3405,11 +3416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -3418,7 +3429,7 @@ PrefabInstance:
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1839586004}
+      objectReference: {fileID: 1867477120830119552}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -3433,7 +3444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: quitGame
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -3441,7 +3452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: LeaveGame, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -3449,11 +3460,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5812756429963514650, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -3469,18 +3484,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_text
-      value: 'Options
+      value: 'Quit
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -7662000516964861790, guid: 024cd9011e0463e408a91cc34f22ecf7, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6672399125498210049, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -3488,13 +3503,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5534697006896297287, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1867477120830119552}
   m_SourcePrefab: {fileID: 100100000, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
 --- !u!224 &1867477120830119547 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5060733543161187499, guid: 7a712c28ef9df1d47a829a180b2eea89, type: 3}
   m_PrefabInstance: {fileID: 1867477120830119546}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1867477120830119552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577267466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21774010a373154182294401d4137f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6344801491276172532
 PrefabInstance:
   m_ObjectHideFlags: 0
