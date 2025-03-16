@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c01ddeffceaacd14daeb4f0aed96f194
+guid: 1ccb4cca8e4ee614bbf969e16d9a8453
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8240666790898325427
-    second: T_UI_SplashArt_01_0
+      213: -6551654405270025110
+    second: T_UI_SplashArt_01 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T_UI_SplashArt_01_0
+      name: T_UI_SplashArt_01 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d48a520f63543ad80800000000000000
-      internalID: -8240666790898325427
+      spriteID: a6cc1c2d709d315a0800000000000000
+      internalID: -6551654405270025110
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      T_UI_SplashArt_01_0: -8240666790898325427
+      T_UI_SplashArt_01 1_0: -6551654405270025110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
