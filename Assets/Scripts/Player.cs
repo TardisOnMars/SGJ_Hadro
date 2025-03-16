@@ -43,6 +43,8 @@ public class Player : MonoBehaviour
 
         var destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _agent.SetDestination(destination);
+        
+        transform.localScale = _agent.destination.x < transform.position.x ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
     }
     
     private bool HasClickedOverUI()

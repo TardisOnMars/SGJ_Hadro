@@ -8,6 +8,7 @@ public class FollowHadro : MonoBehaviour
     public Transform target;
 
     public bool isFollowing;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +24,7 @@ public class FollowHadro : MonoBehaviour
             target = collision.collider.transform;
         }
     }
-    
+
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("MainHadro"))
@@ -36,7 +37,10 @@ public class FollowHadro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isFollowing)
+        if (isFollowing)
+        {
             agent.SetDestination(target.position);
+            transform.localScale = agent.destination.x < transform.position.x ? new Vector3(0.5f, 0.5f, 1) : new Vector3(-0.5f, 0.5f, 1);
+        }
     }
 }

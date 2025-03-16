@@ -30,6 +30,7 @@ public class YounglingEnemy : MonoBehaviour
             {
                 agent.SetDestination(_target.position);
             }
+            transform.localScale = agent.destination.x < transform.position.x ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
         }
         else
         {

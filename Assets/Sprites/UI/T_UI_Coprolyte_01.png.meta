@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      T_UI_Coprolyte_01_0: 2476451304287645217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

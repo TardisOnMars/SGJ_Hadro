@@ -12,7 +12,7 @@ public class Plant : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     public bool OnEaten()
