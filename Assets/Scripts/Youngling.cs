@@ -3,6 +3,11 @@ using UnityEngine;
 public class Youngling : MonoBehaviour
 {
     public GameObject bonesPile;
+
+    void Start()
+    {
+        AudioManager.Instance.PlaySoundOneShoot("EclosionOeuf");
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("YounglingEnemy"))

@@ -19,6 +19,7 @@ public class Plant : MonoBehaviour
     {
         if (!_isEaten)
         {
+            AudioManager.Instance.PlaySoundOneShoot("MangerPlante");
             spriteRenderer.sprite = eatenSprite;
             StartCoroutine(GrowBack());
             _isEaten = true;
