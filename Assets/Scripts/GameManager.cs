@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
         {
             AudioManager.Instance.PlaySoundOneShoot("AdulteMort");
             Debug.Log("Game Over!");
-            FindFirstObjectByType<SceneLoader>().LoadScene(7);
+            FindFirstObjectByType<SceneLoader>().LoadScene(9);
         }
 
         if (younglingEnemyCount > 0)
