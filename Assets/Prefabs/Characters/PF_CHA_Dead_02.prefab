@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9875c47bbf728ea44afdf9a5c89d8afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 6015863629172866641}
 --- !u!1 &2092639743213336830
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,11 +267,19 @@ PrefabInstance:
       value: PF_VFX_Cloud_01
       objectReference: {fileID: 0}
     - target: {fileID: 1018388970794843528, guid: cf182b0ac99eb3c4c852c007bb1d957a, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018388970794843528, guid: cf182b0ac99eb3c4c852c007bb1d957a, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1018388970794843528, guid: cf182b0ac99eb3c4c852c007bb1d957a, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860553093296958620, guid: cf182b0ac99eb3c4c852c007bb1d957a, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3485416832285641139, guid: cf182b0ac99eb3c4c852c007bb1d957a, type: 3}
@@ -330,6 +339,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf182b0ac99eb3c4c852c007bb1d957a, type: 3}
+--- !u!198 &6015863629172866641 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1018388970794843528, guid: cf182b0ac99eb3c4c852c007bb1d957a, type: 3}
+  m_PrefabInstance: {fileID: 6728007614517248985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7854312260529883754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3485416832285641139, guid: cf182b0ac99eb3c4c852c007bb1d957a, type: 3}

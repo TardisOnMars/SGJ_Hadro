@@ -4849,7 +4849,7 @@ MonoBehaviour:
   foodBar: {fileID: 1260356116}
   individuals: []
   starvationDuration: 4
-  bonesPrefab: {fileID: 1799556718294474956, guid: d8f85039f4c0cc649a0327cd22473c53, type: 3}
+  bonesPrefab: {fileID: 1799556718294474956, guid: 83ecf812d50502d4ca2be999e570df3a, type: 3}
 --- !u!50 &1153161120
 Rigidbody2D:
   serializedVersion: 5
