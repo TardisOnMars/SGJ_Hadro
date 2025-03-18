@@ -61,7 +61,7 @@ public class MainHadro : MonoBehaviour
 
         if (isStarving)
         {
-            AudioManager.Instance.PlaySoundOneShoot("AdulteAffame");
+            //AudioManager.Instance.PlaySoundOneShoot("AdulteAffame");
             currentStarvationTime += Time.deltaTime;
             
             if (currentStarvationTime >= starvationDuration)

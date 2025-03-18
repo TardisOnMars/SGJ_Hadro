@@ -32,7 +32,8 @@ public class FoodBarUI : MonoBehaviour
     [ContextMenu("StartBlink")]
     public void StartBlinking()
     {
-        if(blinkingTween == null)
+        AudioManager.Instance.PlaySoundOneShoot("AdulteAffame");
+        if (blinkingTween == null)
             blinkingTween = stomachIcon.DOColor(blinkColor, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
     }
 

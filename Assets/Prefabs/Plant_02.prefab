@@ -172,9 +172,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillAmount: 0.25
-  pageName: 
+  regrowDuration: 25
   eatenSprite: {fileID: 0}
-  fullSprite: {fileID: 0}
+  fullSprite: {fileID: 21300000, guid: c8b406832edc73a4daec591fba214272, type: 3}
+  shadowSpriteRenderer: {fileID: 6024210481677455731}
+  pageName: 
 --- !u!50 &12830307507606866
 Rigidbody2D:
   serializedVersion: 5
