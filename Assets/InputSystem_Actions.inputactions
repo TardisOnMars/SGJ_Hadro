@@ -492,6 +492,17 @@
                     "action": "Destination",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ff362fab-758e-437f-9087-fac940b97157",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Destination",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
