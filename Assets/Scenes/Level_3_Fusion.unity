@@ -11947,7 +11947,7 @@ MonoBehaviour:
   mainHadro: {fileID: 1102021389}
   individuals: []
   younglingEnemies: []
-  victoryAmount: 15
+  victoryAmount: 18
   addEgg:
     m_PersistentCalls:
       m_Calls: []
