@@ -1212,13 +1212,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ce jeu a pour but de se familiaris\xE9 avec les hadrosaures, ou \"dinosaures
+  m_text: "Ce jeu a pour but de se familiariser avec les hadrosaures, ou \"dinosaures
     \xE0 bec de canard\", et de comprendre \xE0 travers leur \xE9cologie leur succ\xE8s
     \xE9volutif au Cr\xE9tac\xE9.\r\n\r\nLes hadrosaures forment une des familles
     de vert\xE9br\xE9s les plus diversifi\xE9s dans l\u2019histoire de la vie sur
     Terre. Ils sont notamment connus pour la diversit\xE9 de formes de leur cr\xEAte
-    frontale et leurs capacit\xE9 masticatrice unique dans l\u2019histoire de la
-    vie sur Terre.  A travers 5 \xE9pisodes de dispersion, ils colonisent au Cr\xE9tac\xE9
+    frontale et leurs capacit\xE9s masticatrices uniques dans l\u2019histoire de
+    la vie sur Terre.  A travers 5 \xE9pisodes de dispersion, ils colonisent au Cr\xE9tac\xE9
     tous les continents, et de nombreux environnements, des pal\xE9o-tropiques aux
     pal\xE9o-p\xF4les. C\u2019est exceptionnel ! Certains scientifiques pensent m\xEAme
     qu\u2019ils sont responsables de la chute de la diversit\xE9 des dinosaures triceratops
@@ -1230,9 +1230,7 @@ MonoBehaviour:
     stebingeri. Combien d\u2019\u0153ufs pondait-il ? Les couvait-il ? Aidait-il
     ses jeunes \xE0 la naissance ? Migraient-ils en horde ? Toutes les r\xE9ponses
     se trouvent dans le jeu ! Des informations compl\xE9mentaires et\r\nsurprenantes
-    sont pr\xE9sent\xE9es dans le carnet du pal\xE9ontologue.mersive et ludique du
-    suivi de la vie d\u2019un hadrosaure, et plus particuli\xE8rement de l\u2019esp\xE8ce
-    Hypacrosaurus stebingeri. "
+    sont pr\xE9sent\xE9es dans le carnet du pal\xE9ontologue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

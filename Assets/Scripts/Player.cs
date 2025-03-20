@@ -21,7 +21,10 @@ public class Player : MonoBehaviour
     
     private NavMeshAgent _agent;
 
-    private Tween _tweenAwoke;
+    private Tween _tweenIdle;
+
+    [SerializeField] private Animator _animator;
+
 
     public void Start()
     {
@@ -35,17 +38,20 @@ public class Player : MonoBehaviour
     {
         if (_agent.velocity.magnitude > 0.1f)
         {
-            if(_tweenAwoke == null)
-                _tweenAwoke = transform.DOScaleY(transform.localScale.y + 0.1f, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
+            _animator.SetBool("IsWalking",true);
+            DOTween.Kill(_tweenIdle);
+            _tweenIdle.SetLoops(0);
+            _tweenIdle.Complete();
+            _tweenIdle.Kill();
+            _tweenIdle = null;
+            transform.localScale = new Vector3(transform.localScale.x, 1, 1);
+
         }
         else
         {
-            DOTween.Kill(_tweenAwoke);
-            _tweenAwoke.SetLoops(0);
-            _tweenAwoke.Complete();
-            _tweenAwoke.Kill();
-            _tweenAwoke = null;
-            transform.localScale = new Vector3(transform.localScale.x, 1, 1);
+            _animator.SetBool("IsWalking", false);
+            if (_tweenIdle == null)
+                _tweenIdle = transform.DOScaleY(transform.localScale.y + 0.03f, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
         }
     }
 

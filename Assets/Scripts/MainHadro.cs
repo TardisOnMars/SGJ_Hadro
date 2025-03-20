@@ -21,6 +21,8 @@ public class MainHadro : MonoBehaviour
     private float currentStarvationTime = 0f;
     public GameObject bonesPrefab;
     
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
