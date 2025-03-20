@@ -42,7 +42,7 @@ public class MainHadro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("food " + food);
+        //Debug.Log("food " + food);
         if (isBreeding)
         {
             food -= decreaseRateBreeding * Time.deltaTime * MAX_FOOD;
@@ -54,7 +54,7 @@ public class MainHadro : MonoBehaviour
         this.food = Mathf.Clamp(this.food, 0f, MAX_FOOD);
 
         foodBar.FillAmount = Mathf.Clamp(food / MAX_FOOD, 0f, 1f);
-        Debug.Log("foodBar.FillAmount " + foodBar.FillAmount);
+        //Debug.Log("foodBar.FillAmount " + foodBar.FillAmount);
 
         if (foodBar.FillAmount <= 0 && !isStarving)
         {

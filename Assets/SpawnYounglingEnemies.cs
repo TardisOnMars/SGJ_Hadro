@@ -12,7 +12,7 @@ public class SpawnYounglingEnemies : MonoBehaviour
         if (other.tag == "YounglingEnemy") return;
 
         var value = Random.Range(0f, 100f);
-        Debug.Log("Spawn chance = " + spawnChance + " value = " + value + " other name " + other.name);
+        //Debug.Log("Spawn chance = " + spawnChance + " value = " + value + " other name " + other.name);
         if (value < spawnChance)
         {
             spawnChance -= 20f;
