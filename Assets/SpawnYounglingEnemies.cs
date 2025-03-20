@@ -4,17 +4,32 @@ using UnityEngine.AI;
 public class SpawnYounglingEnemies : MonoBehaviour
 {
     public GameObject younglingEnemyPrefab;
+    public Transform spawnPoint;
+
+    private float spawnChance = 40f;
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.tag == "YounglingEnemy") return;
+
         var value = Random.Range(0f, 100f);
-        if (value > 25f) return;
-        
+        Debug.Log("Spawn chance = " + spawnChance + " value = " + value + " other name " + other.name);
+        if (value < spawnChance)
+        {
+            spawnChance -= 20f;
+            return;
+        }
+        else
+        {
+            spawnChance += 20f;
+        }
+
         if (other.CompareTag("MainHadro"))
         {
             AudioManager.Instance.PlaySoundOneShoot("TroodonRicane");
-            var enemy = Instantiate(younglingEnemyPrefab, this.transform.position, Quaternion.identity);
+            //var enemy = Instantiate(younglingEnemyPrefab, this.transform.position, Quaternion.identity);
+            var enemy = Instantiate(younglingEnemyPrefab, spawnPoint.position, Quaternion.identity);
             GameManager.Instance.OnAddYounglingEnemy(enemy);
-            
+
             if (GameManager.Instance.individuals.Count > 0)
             {
                 var target = GameManager.Instance.individuals[^1];
