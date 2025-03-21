@@ -6,7 +6,7 @@ public class SpawnYounglingEnemies : MonoBehaviour
     public GameObject younglingEnemyPrefab;
     public Transform spawnPoint;
 
-    private float spawnChance = 40f;
+    private float spawnChance = 45f;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "YounglingEnemy") return;
@@ -15,12 +15,12 @@ public class SpawnYounglingEnemies : MonoBehaviour
         //Debug.Log("Spawn chance = " + spawnChance + " value = " + value + " other name " + other.name);
         if (value < spawnChance)
         {
-            spawnChance -= 20f;
+            spawnChance -= 30f;
             return;
         }
         else
         {
-            spawnChance += 20f;
+            spawnChance += 15f;
         }
 
         if (other.CompareTag("MainHadro"))
