@@ -198,6 +198,7 @@ MonoBehaviour:
   oneShootSource: {fileID: 375276466978891020}
   ambientMusicSource: {fileID: 21201169190933253}
   ambientMusic: {fileID: 8300000, guid: 7f2262defe42ce04aaa8f2e33cda132b, type: 3}
+  mixer: {fileID: 24100000, guid: 71a7be37aae120b4da11cffb72dde435, type: 2}
 --- !u!1 &8798770725626773043
 GameObject:
   m_ObjectHideFlags: 0
