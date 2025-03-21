@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -132,6 +133,7 @@ public class GameManager : MonoBehaviour
 
         if (younglingEnemyCount > 0)
         {
+
             attackButtonCanvas.enabled = true;
         }
         else
@@ -139,6 +141,7 @@ public class GameManager : MonoBehaviour
             attackButtonCanvas.enabled = false;
         }
     }
+
 
     public void OnAttack()
     {
@@ -148,8 +151,14 @@ public class GameManager : MonoBehaviour
             if (Vector3.Distance(mainHadro.transform.position, enemy.transform.position) < 10f)
             {
                 var younglingEnemy = enemy.GetComponent<YounglingEnemy>();
-                younglingEnemy.OnAttacked();
+                younglingEnemy.OnAttacked(mainHadro);
             }
         }
+    }
+
+    public void OnDestroy()
+    {
+        DOTween.KillAll();
+        DOTween.Clear();
     }
 }

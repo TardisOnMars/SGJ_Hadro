@@ -1,4 +1,6 @@
 using DG.Tweening;
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +13,7 @@ public class FoodBarUI : MonoBehaviour
     private float _fillAmount = 1f;
     private Tween blinkingTween;
 
+    private Coroutine shoutCoroutine;
     public float FillAmount
     {
         get => _fillAmount;
@@ -32,9 +35,20 @@ public class FoodBarUI : MonoBehaviour
     [ContextMenu("StartBlink")]
     public void StartBlinking()
     {
-        AudioManager.Instance.PlaySoundOneShoot("AdulteAffame");
+        if (shoutCoroutine == null)
+            shoutCoroutine = StartCoroutine(CoShoutHunger());
         if (blinkingTween == null)
             blinkingTween = stomachIcon.DOColor(blinkColor, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
+    }
+
+    private IEnumerator CoShoutHunger()
+    {
+        while (true)
+        {
+            if(_fillAmount <= 0f) 
+                AudioManager.Instance.PlaySoundOneShoot("AdulteAffame");
+            yield return new WaitForSeconds(3f);
+        }
     }
 
     [ContextMenu("StopBlinking")]

@@ -29,6 +29,7 @@ public class Youngling : MonoBehaviour
             var younglingEnemy = other.GetComponent<YounglingEnemy>();
             if (!younglingEnemy.IsHunting()) return;
             
+            younglingEnemy.DepopAfterKill();
             Instantiate(bonesPile, transform.position, Quaternion.identity);
             GameManager.Instance.OnKillYoungling(gameObject);
             Destroy(gameObject);
