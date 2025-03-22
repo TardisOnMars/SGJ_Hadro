@@ -85,6 +85,7 @@ public class GameManager : MonoBehaviour
 
     public void OnAddHadro(GameObject hadro)
     {
+        Debug.Log("In Add Hadro In game Manager");
         hadroCount++;
         individualTotalCount++;
         individuals.Add(hadro);
@@ -97,6 +98,8 @@ public class GameManager : MonoBehaviour
         hadroCount--;
         individualTotalCount--;
         if(individuals.Contains(hadro)) individuals.Remove(hadro);
+        if(hadro.GetComponent<AdultHadro>() != null)
+            hadro.GetComponent<AdultHadro>().KillAdultHadro();
         killHadro.Invoke();
         checkPopulation.Invoke();
     }

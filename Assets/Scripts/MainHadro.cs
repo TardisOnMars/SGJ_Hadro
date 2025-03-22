@@ -27,6 +27,7 @@ public class MainHadro : MonoBehaviour
     void Start()
     {
         GameManager.Instance.checkPopulation.AddListener(UpdateIndividuals);
+
     }
 
 
@@ -71,6 +72,7 @@ public class MainHadro : MonoBehaviour
             
             if (currentStarvationTime >= starvationDuration)
             {
+
                 currentStarvationTime = 0f;
                 
                 if (individuals.Count <= 0 )
@@ -86,7 +88,7 @@ public class MainHadro : MonoBehaviour
                     {
                         GameManager.Instance.OnKillYoungling(toKill);
                     }
-                    else if (toKill.GetComponent<Hadro>())
+                    else if (toKill.GetComponent<AdultHadro>())
                     {
                         GameManager.Instance.OnKillHadro(toKill);
                     }
@@ -107,6 +109,8 @@ public class MainHadro : MonoBehaviour
             EatFood(other.GetComponent<Plant>());
         }
     }
+
+
 
     public void EatFood(Plant food)
     {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1316742364367728401}
   - component: {fileID: 3486874385323894556}
   - component: {fileID: 2862852495775860902}
+  - component: {fileID: 3495528564640790881}
   m_Layer: 5
   m_Name: InteractUI
   m_TagString: Untagged
@@ -117,6 +118,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toFollow: {fileID: 0}
   yOffset: -1
+--- !u!114 &3495528564640790881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21656464346761441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9904def55b8e748b16c0f6ac05e850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shoutAttackAction: {fileID: 6260514955426347884, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  attackButton: {fileID: 5586596543214388103}
 --- !u!1 &6617579775886873074
 GameObject:
   m_ObjectHideFlags: 0
