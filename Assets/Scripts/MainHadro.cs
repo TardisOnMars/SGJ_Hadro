@@ -116,7 +116,7 @@ public class MainHadro : MonoBehaviour
     {
         if (!food.OnEaten()) return;
         
-        this.food += food.fillAmount * 100 / (GameManager.Instance.hadroCount + GameManager.Instance.younglingCount / 2.0f);
+        this.food += food.fillAmount * 125 / (GameManager.Instance.hadroCount + GameManager.Instance.younglingCount / 2.5f);
         //if (this.food > MAX_FOOD) this.food = MAX_FOOD;
         this.food = Mathf.Clamp(this.food, 0f, MAX_FOOD);
 
