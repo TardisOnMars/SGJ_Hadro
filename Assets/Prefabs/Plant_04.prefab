@@ -171,8 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3beaf8cfde037ef41a8902cbd9e5cdad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillAmount: 0.2
-  regrowDuration: 40
+  fillAmount: 0.35
+  regrowDuration: 72
   eatenSprite: {fileID: 0}
   fullSprite: {fileID: 21300000, guid: 39e2c9d24a6092246885bdb6593a53bd, type: 3}
   shadowSpriteRenderer: {fileID: 6024210481677455731}
