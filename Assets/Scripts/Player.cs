@@ -11,7 +11,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private GraphicRaycaster graphicRaycaster;
+    private GraphicRaycaster[] graphicRaycasters;
     // Struct to hold pointer data (mainly its position)
     private PointerEventData _clickData;
     // List containing all the UI elements hit by the raycast
@@ -81,9 +81,13 @@ public class Player : MonoBehaviour
     
     private bool HasClickedOverUI()
     {
+        graphicRaycasters = FindObjectsByType<GraphicRaycaster>(FindObjectsSortMode.None);
         _clickData.position = Mouse.current.position.ReadValue();
         _raycastResults.Clear();
-        graphicRaycaster.Raycast(_clickData, _raycastResults);
+        foreach(var raycaster in graphicRaycasters)
+        {
+            raycaster.Raycast(_clickData, _raycastResults);
+        }
         return _raycastResults.Count > 0;
     }
 
