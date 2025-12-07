@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Plant : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class Plant : MonoBehaviour
     [Header("Book Information")]
     public string pageName;
 
+    public UnityEvent onPlantEaten;
+
     private SpriteRenderer spriteRenderer;
     private bool _isEaten = false;
 
@@ -32,6 +35,7 @@ public class Plant : MonoBehaviour
     {
         if (!_isEaten)
         {
+            onPlantEaten.Invoke();
             AudioManager.Instance.PlaySoundOneShoot("MangerPlante");
             shadowSpriteRenderer.gameObject.SetActive(false);
             spriteRenderer.sprite = eatenSprite;

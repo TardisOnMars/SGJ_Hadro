@@ -8,7 +8,7 @@ public class GameUIManager : MonoBehaviour
     public TextMeshProUGUI _textHadro;
     public TextMeshProUGUI _textCurrentTotal;
     public TextMeshProUGUI _textVictory;
-    public 
+    public GameObject _exclamationMark;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +26,11 @@ public class GameUIManager : MonoBehaviour
         UpdateEggUI();
         UpdateYounglingsUI();
         UpdateHadroUI();
+    }
+
+    public void ToggleExclamationMark(bool status)
+    {
+        _exclamationMark.SetActive(status);
     }
 
     private void UpdatePopulationUI()

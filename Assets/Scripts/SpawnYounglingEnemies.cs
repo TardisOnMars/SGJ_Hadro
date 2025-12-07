@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class SpawnYounglingEnemies : MonoBehaviour
 {
     public GameObject younglingEnemyPrefab;
     public Transform spawnPoint;
+
+    public UnityEvent onSpawn;
 
     private float spawnChance = 45f;
     void OnTriggerEnter2D(Collider2D other)
@@ -29,6 +32,7 @@ public class SpawnYounglingEnemies : MonoBehaviour
             //var enemy = Instantiate(younglingEnemyPrefab, this.transform.position, Quaternion.identity);
             var enemy = Instantiate(younglingEnemyPrefab, spawnPoint.position, Quaternion.identity);
             GameManager.Instance.OnAddYounglingEnemy(enemy);
+            onSpawn.Invoke();
 
             if (GameManager.Instance.individuals.Count > 0)
             {

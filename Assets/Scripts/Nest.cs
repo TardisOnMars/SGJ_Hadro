@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using System.Collections.Generic;
 public class Nest : MonoBehaviour
 {
@@ -24,8 +25,11 @@ public class Nest : MonoBehaviour
     public float hatchingDuration = 8f;
     public float currentHatchingTime;
     public float _breedingSpeed =  0.3f;
-    
-    
+
+    public UnityEvent onBuilding = new();
+    public UnityEvent onHatching = new();
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,6 +45,8 @@ public class Nest : MonoBehaviour
     {
         if (!_isBuilt && _isBuilding)
         {
+            onBuilding.Invoke();
+
             buildingFillBar.FillAmount += Time.deltaTime * _buildingSpeed;
             if (buildingFillBar.FillAmount >= 1f)
             {
@@ -88,6 +94,7 @@ public class Nest : MonoBehaviour
             currentHatchingTime += Time.deltaTime;
             if (currentHatchingTime >= hatchingDuration)
             {
+                onHatching.Invoke();
                 _eggAmount--;
                 var youngling = Instantiate(younglingPrefab, _hatchingPositions[_eggAmount].position, Quaternion.identity);
                 GameManager.Instance.OnKillEgg();

@@ -371,6 +371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 297858255278180011}
   - component: {fileID: 3793371780729830482}
+  - component: {fileID: 5804047842216508205}
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -420,15 +421,43 @@ MonoBehaviour:
   - {fileID: 9006213251540608433}
   - {fileID: 7174155636714898352}
   - {fileID: 6687853003180992432}
-  - {fileID: 2917424028531476519}
-  - {fileID: 5907691419885630282}
   - {fileID: 5796242418441015989}
   - {fileID: 7984209940097997626}
-  - {fileID: 7681661252514652800}
+  - {fileID: 2917424028531476519}
+  - {fileID: 5907691419885630282}
   - {fileID: 1235846070088462351}
+  - {fileID: 7681661252514652800}
   emptyPage: {fileID: 1870012324038540280}
   rightArrow: {fileID: 5825173462405165146}
   leftArrow: {fileID: 2385517665849182416}
+  onUnlock:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameUIManager, Assembly-CSharp
+        m_MethodName: ToggleExclamationMark
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &5804047842216508205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928778538091995734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a3f6d75ce500142a76aa7ba5738782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pagesToUnlock: 000000000100000002000000
 --- !u!1 &980238797136034865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,6 +3363,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Pauser, Assembly-CSharp
+        m_MethodName: UnpauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8106839301698413645
 GameObject:
   m_ObjectHideFlags: 0
@@ -3654,7 +3695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -357, y: -24.999939}
+  m_AnchoredPosition: {x: -357, y: -25}
   m_SizeDelta: {x: -1691.0034, y: -770.9262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1571316596294373618

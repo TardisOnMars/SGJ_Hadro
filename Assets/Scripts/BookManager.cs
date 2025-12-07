@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BookManager : MonoBehaviour
 {
@@ -9,18 +10,26 @@ public class BookManager : MonoBehaviour
     private bool[] unlockedPages;
     public GameObject rightArrow;
     public GameObject leftArrow;
+
+    public UnityEvent onUnlock;
+
     void Start()
     {
-        unlockedPages = Enumerable.Repeat<bool>(true, pagesList.Length-1).ToArray();
-        unlockedPages[0] = true;
-        unlockedPages[1] = true;
-        unlockedPages[2] = true;
+        unlockedPages = Enumerable.Repeat<bool>(false, pagesList.Length).ToArray();
         currentPage = 0;
         pagesList[currentPage].SetActive(true);
         leftArrow.SetActive(false);
     }
 
     public void unlockPage(int page)
+    {
+        if (unlockedPages[page]) return;
+
+        unlockedPages[page] = true;
+        onUnlock.Invoke();
+    }
+
+    public void noExclamationMarkUnlockPage(int page)
     {
         unlockedPages[page] = true;
     }
@@ -40,7 +49,7 @@ public class BookManager : MonoBehaviour
             emptyPage.SetActive(true);
             currentPage++;
         }
-        if (currentPage >= pagesList.Length-2)
+        if (currentPage >= pagesList.Length-1)
         {
             rightArrow.SetActive(false);
         }
@@ -55,6 +64,7 @@ public class BookManager : MonoBehaviour
             pagesList[currentPage].SetActive(false);
             currentPage--;
             pagesList[currentPage].SetActive(true);
+            emptyPage.SetActive(false);
         }
         else
         {
@@ -77,5 +87,19 @@ public class BookManager : MonoBehaviour
     public void PlayCloseSound()
     {
         AudioManager.Instance.PlaySoundOneShoot("CarnetFermeture");
+    }
+
+    public void OnEnable()
+    {
+        currentPage = 0;
+        pagesList[currentPage].SetActive(true);
+        rightArrow.SetActive(true);
+    }
+
+    public void OnDisable()
+    {
+        pagesList[currentPage].SetActive(false);
+        emptyPage.SetActive(false);
+        leftArrow.SetActive(false);
     }
 }
